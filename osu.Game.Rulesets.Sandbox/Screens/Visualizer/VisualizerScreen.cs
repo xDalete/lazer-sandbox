@@ -18,7 +18,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer
 {
-    public class VisualizerScreen : SandboxScreenWithSettings, IKeyBindingHandler<GlobalAction>
+    public partial class VisualizerScreen : SandboxScreenWithSettings, IKeyBindingHandler<GlobalAction>
     {
         public override bool AllowBackButton => false;
 
@@ -97,7 +97,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer
         {
         }
 
-        private class CursorHider : CompositeDrawable, IProvideCursor
+        private partial class CursorHider : CompositeDrawable, IProvideCursor
         {
             public CursorHider()
             {
@@ -115,7 +115,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer
                 return true;
             }
 
-            private class EmptyCursor : CursorContainer
+            private partial class EmptyCursor : CursorContainer
             {
                 protected override Drawable CreateCursor() => Empty();
             }

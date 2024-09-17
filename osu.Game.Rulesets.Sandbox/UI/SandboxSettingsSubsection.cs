@@ -10,7 +10,7 @@ using osu.Game.Screens.Menu;
 
 namespace osu.Game.Rulesets.Sandbox.UI
 {
-    public class SandboxSettingsSubsection : RulesetSettingsSubsection
+    public partial class SandboxSettingsSubsection : RulesetSettingsSubsection
     {
         protected override LocalisableString Header => "Sandbox";
 

@@ -13,7 +13,7 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Sandbox.UI.Overlays
 {
-    public class SandboxCheckbox : CompositeDrawable
+    public partial class SandboxCheckbox : CompositeDrawable
     {
         public readonly BindableBool Current = new BindableBool();
 
@@ -67,7 +67,7 @@ namespace osu.Game.Rulesets.Sandbox.UI.Overlays
             return true;
         }
 
-        private class LocalBox : CompositeDrawable
+        private partial class LocalBox : CompositeDrawable
         {
             public readonly BindableBool Current = new BindableBool();
 

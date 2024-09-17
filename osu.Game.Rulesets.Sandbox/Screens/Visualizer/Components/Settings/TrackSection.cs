@@ -8,7 +8,7 @@ using osu.Game.Rulesets.Sandbox.UI.Settings;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
 {
-    public class TrackSection : SandboxSettingsSection
+    public partial class TrackSection : SandboxSettingsSection
     {
         protected override string HeaderName => "Track";
 

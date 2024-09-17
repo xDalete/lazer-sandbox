@@ -42,7 +42,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Layouts.TypeB
             {
                 Anchor = Anchor.BottomLeft,
                 Origin = Anchor.BottomLeft,
-                Width = 500,
+                Width = 1000,
                 AutoSizeAxes = Axes.Y,
                 Direction = FillDirection.Vertical,
                 Children = new Drawable[]
@@ -50,7 +50,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Layouts.TypeB
                     visualizerContainer = new Container<LinearMusicVisualizerDrawable>
                     {
                         RelativeSizeAxes = Axes.X,
-                        Height = 200
+                        Height = 250
                     },
                     new Container
                     {

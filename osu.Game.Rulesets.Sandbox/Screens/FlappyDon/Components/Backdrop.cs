@@ -6,7 +6,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class Backdrop : Container<Sprite>
+    public partial class Backdrop : Container<Sprite>
     {
         public bool Running { get; private set; }
 

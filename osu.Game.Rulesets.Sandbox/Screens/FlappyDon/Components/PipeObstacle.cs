@@ -7,7 +7,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class PipeObstacle : CompositeDrawable
+    public partial class PipeObstacle : CompositeDrawable
     {
         /// <summary>
         /// The vertical offset from the middle of the screen to denote the default vertical position of the gap in the pipes.

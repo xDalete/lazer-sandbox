@@ -3,7 +3,7 @@ using osu.Framework.Extensions.IEnumerableExtensions;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.MusicHelpers
 {
-    public class MusicIntensityController : MusicAmplitudesProvider
+    public partial class MusicIntensityController : MusicAmplitudesProvider
     {
         public readonly BindableFloat Intensity = new BindableFloat();
 

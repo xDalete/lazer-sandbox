@@ -4,7 +4,7 @@ using osu.Framework.Graphics.Containers;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.MusicHelpers
 {
-    public class CurrentRateContainer : RateAdjustableContainer
+    public partial class CurrentRateContainer : RateAdjustableContainer
     {
         protected readonly BindableBool IsKiai = new BindableBool();
 

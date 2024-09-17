@@ -2,7 +2,7 @@
 
 namespace osu.Game.Rulesets.Sandbox.Objects.Drawables
 {
-    public class DrawableSandboxHitObject : DrawableHitObject<SandboxHitObject>
+    public partial class DrawableSandboxHitObject : DrawableHitObject<SandboxHitObject>
     {
         protected override double InitialLifetimeOffset => 500;
 

@@ -4,7 +4,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class FlappyDonScalingContainer : Container
+    public partial class FlappyDonScalingContainer : Container
     {
         protected override Container<Drawable> Content => content;
 

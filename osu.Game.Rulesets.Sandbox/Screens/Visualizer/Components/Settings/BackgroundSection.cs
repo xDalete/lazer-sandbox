@@ -7,7 +7,7 @@ using osu.Game.Rulesets.Sandbox.UI.Settings;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
 {
-    public class BackgroundSection : SandboxSettingsSection
+    public partial class BackgroundSection : SandboxSettingsSection
     {
         protected override string HeaderName => "Background";
 

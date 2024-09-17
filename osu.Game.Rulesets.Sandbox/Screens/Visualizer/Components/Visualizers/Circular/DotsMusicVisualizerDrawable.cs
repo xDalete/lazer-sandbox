@@ -7,7 +7,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Visualizers.Circular
 {
-    public class DotsMusicVisualizerDrawable : CircularMusicVisualizerDrawable
+    public partial class DotsMusicVisualizerDrawable : CircularMusicVisualizerDrawable
     {
         protected override Texture GetTexture(IRenderer renderer, TextureStore textures) => textures.Get("Visualizer/particle");
 

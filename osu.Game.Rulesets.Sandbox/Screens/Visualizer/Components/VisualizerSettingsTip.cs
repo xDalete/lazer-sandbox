@@ -9,7 +9,7 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
 {
-    public class VisualizerSettingsTip : SandboxOverlay
+    public partial class VisualizerSettingsTip : SandboxOverlay
     {
         private readonly BindableBool showAgain = new BindableBool();
 

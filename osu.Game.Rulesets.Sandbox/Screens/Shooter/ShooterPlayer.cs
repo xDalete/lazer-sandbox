@@ -6,7 +6,7 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Shooter
 {
-    public class ShooterPlayer : CompositeDrawable
+    public partial class ShooterPlayer : CompositeDrawable
     {
         public ShooterPlayer()
         {

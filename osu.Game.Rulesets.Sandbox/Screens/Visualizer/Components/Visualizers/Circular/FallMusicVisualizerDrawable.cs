@@ -8,7 +8,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Visualizers.Circular
 {
-    public class FallMusicVisualizerDrawable : CircularMusicVisualizerDrawable
+    public partial class FallMusicVisualizerDrawable : CircularMusicVisualizerDrawable
     {
         private float[] currentRawFallAudioData;
         private float[] maxFallBarValues;

@@ -5,7 +5,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Main.Components
 {
-    public class SandboxButtonSystem : CompositeDrawable
+    public partial class SandboxButtonSystem : CompositeDrawable
     {
         public SandboxPanel[] Buttons
         {

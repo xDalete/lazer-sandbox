@@ -5,7 +5,7 @@ using osu.Game.Beatmaps;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.MusicHelpers
 {
-    public class CurrentBeatmapProvider : Container
+    public partial class CurrentBeatmapProvider : Container
     {
         protected IBindable<WorkingBeatmap> Beatmap = new Bindable<WorkingBeatmap>();
 

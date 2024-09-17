@@ -9,7 +9,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class Bird : CompositeDrawable
+    public partial class Bird : CompositeDrawable
     {
         public float GroundY = 0.0f;
 

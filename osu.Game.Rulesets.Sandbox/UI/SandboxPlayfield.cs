@@ -8,7 +8,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.UI
 {
-    public class SandboxPlayfield : Playfield
+    public partial class SandboxPlayfield : Playfield
     {
         [BackgroundDependencyLoader]
         private void load(OsuColour colours)

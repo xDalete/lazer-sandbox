@@ -6,7 +6,7 @@ using osu.Game.Rulesets.Sandbox.UI.Settings;
 
 namespace osu.Game.Rulesets.Sandbox.Screens
 {
-    public abstract class SandboxScreenWithSettings : SandboxScreen
+    public abstract partial class SandboxScreenWithSettings : SandboxScreen
     {
         private readonly SandboxSettings settings;
         protected readonly BindableBool SettingsVisible = new BindableBool();

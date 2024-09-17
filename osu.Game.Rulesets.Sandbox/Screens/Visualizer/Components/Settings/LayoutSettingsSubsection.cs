@@ -9,7 +9,7 @@ using osu.Game.Rulesets.Sandbox.UI.Settings;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
 {
-    public class LayoutSettingsSubsection : CompositeDrawable
+    public partial class LayoutSettingsSubsection : CompositeDrawable
     {
         private readonly Bindable<VisualizerLayout> layoutBindable = new Bindable<VisualizerLayout>();
 
@@ -57,7 +57,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
             InternalChild = s;
         }
 
-        private abstract class Subsection : FillFlowContainer
+        private abstract partial class Subsection : FillFlowContainer
         {
             public Subsection()
             {
@@ -68,7 +68,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
             }
         }
 
-        private class TypeASubsection : Subsection
+        private partial class TypeASubsection : Subsection
         {
             [BackgroundDependencyLoader]
             private void load(SandboxRulesetConfigManager config)
@@ -130,9 +130,10 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
                     },
                     new SettingsSlider<int>
                     {
-                        LabelText = "Rotation",
+                        LabelText = "Rotation Speed (rpm)",
                         KeyboardStep = 1,
-                        Current = config.GetBindable<int>(SandboxRulesetSetting.Rotation)
+                        Current = config.GetBindable<int>(SandboxRulesetSetting.RotationsPerMinute),
+                        TransferValueOnCommit = true
                     },
                     new ColourPickerDropdown("Visualizer colour", SandboxRulesetSetting.TypeAColour),
                     new ColourPickerDropdown("Progress bar colour", SandboxRulesetSetting.TypeAProgressColour),
@@ -141,7 +142,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
             }
         }
 
-        private class TypeBSubsection : Subsection
+        private partial class TypeBSubsection : Subsection
         {
             [BackgroundDependencyLoader]
             private void load(SandboxRulesetConfigManager config)
@@ -190,7 +191,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
             }
         }
 
-        private class EmptySubsection : Subsection
+        private partial class EmptySubsection : Subsection
         {
         }
     }

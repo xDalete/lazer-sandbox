@@ -6,7 +6,7 @@ using osu.Game.Rulesets.Sandbox.UI.Settings;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
 {
-    public class VisualizerSection : SandboxSettingsSection
+    public partial class VisualizerSection : SandboxSettingsSection
     {
         protected override string HeaderName => "Visualizer";
 

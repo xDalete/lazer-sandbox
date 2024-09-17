@@ -33,7 +33,7 @@ namespace osu.Game.Rulesets.Sandbox.Configuration
             // TypeA settings
             SetDefault(SandboxRulesetSetting.Radius, 350, 200, 500);
             SetDefault(SandboxRulesetSetting.CircularBarType, CircularBarType.Basic);
-            SetDefault(SandboxRulesetSetting.Rotation, 0, 0, 360);
+            SetDefault(SandboxRulesetSetting.RotationsPerMinute, 0, -60, 60);
             SetDefault(SandboxRulesetSetting.DecayA, 200, 100, 500);
             SetDefault(SandboxRulesetSetting.MultiplierA, 400, 200, 500);
             SetDefault(SandboxRulesetSetting.Symmetry, false);
@@ -76,7 +76,7 @@ namespace osu.Game.Rulesets.Sandbox.Configuration
         // TypeA settings
         Radius,
         CircularBarType,
-        Rotation,
+        RotationsPerMinute,
         DecayA,
         MultiplierA,
         Symmetry,

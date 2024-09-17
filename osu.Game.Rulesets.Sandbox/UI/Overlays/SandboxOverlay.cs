@@ -13,7 +13,7 @@ using osu.Game.Graphics.UserInterface;
 
 namespace osu.Game.Rulesets.Sandbox.UI.Overlays
 {
-    public abstract class SandboxOverlay : OverlayContainer
+    public abstract partial class SandboxOverlay : OverlayContainer
     {
         public SandboxOverlay()
         {
@@ -104,7 +104,7 @@ namespace osu.Game.Rulesets.Sandbox.UI.Overlays
 
         protected override void PopOut() => this.FadeOut(250, Easing.OutQuint);
 
-        public class SandboxOverlayButton : CompositeDrawable
+        public partial class SandboxOverlayButton : CompositeDrawable
         {
             public Action ClickAction;
 
@@ -185,7 +185,7 @@ namespace osu.Game.Rulesets.Sandbox.UI.Overlays
                     Type = EdgeEffectType.Shadow
                 }, 500, Easing.OutElastic);
 
-                // Delayed to fix cases when confirm sound can not be played. 
+                // Delayed to fix cases when confirm sound can not be played.
                 Scheduler.AddDelayed(() =>
                 {
                     if (IsHovered)

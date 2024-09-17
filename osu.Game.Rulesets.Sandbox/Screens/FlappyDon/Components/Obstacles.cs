@@ -9,7 +9,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class Obstacles : CompositeDrawable
+    public partial class Obstacles : CompositeDrawable
     {
         /// <summary>
         /// The bounding size of the collision box representing the bird

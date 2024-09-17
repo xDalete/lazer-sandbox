@@ -6,7 +6,7 @@ using osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.MusicHelpers;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
 {
-    public class Particles : CurrentRateContainer
+    public partial class Particles : CurrentRateContainer
     {
         private readonly Bindable<string> colour = new Bindable<string>("#ffffff");
         private readonly Bindable<ParticlesDirection> direction = new Bindable<ParticlesDirection>();

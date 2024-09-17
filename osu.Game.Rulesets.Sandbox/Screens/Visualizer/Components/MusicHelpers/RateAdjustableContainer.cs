@@ -3,7 +3,7 @@ using osu.Framework.Timing;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.MusicHelpers
 {
-    public class RateAdjustableContainer : Container
+    public partial class RateAdjustableContainer : Container
     {
         public double Rate
         {

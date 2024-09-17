@@ -2,7 +2,7 @@
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Layouts
 {
-    public class TypeBLayout : DrawableVisualizerLayout
+    public partial class TypeBLayout : DrawableVisualizerLayout
     {
         public TypeBLayout()
         {

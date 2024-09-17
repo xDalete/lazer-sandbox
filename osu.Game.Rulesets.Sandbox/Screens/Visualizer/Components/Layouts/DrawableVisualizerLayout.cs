@@ -3,7 +3,7 @@ using osu.Framework.Graphics;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Layouts
 {
-    public abstract class DrawableVisualizerLayout : CompositeDrawable
+    public abstract partial class DrawableVisualizerLayout : CompositeDrawable
     {
         public DrawableVisualizerLayout()
         {

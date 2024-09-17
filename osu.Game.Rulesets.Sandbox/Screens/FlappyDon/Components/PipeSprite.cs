@@ -6,7 +6,7 @@ using osuTK;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.FlappyDon.Components
 {
-    public class PipeSprite : Sprite
+    public partial class PipeSprite : Sprite
     {
         public PipeSprite()
         {

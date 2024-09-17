@@ -7,7 +7,7 @@ using osuTK.Graphics;
 
 namespace osu.Game.Rulesets.Sandbox.UI
 {
-    public class InteractiveContainer : Container
+    public partial class InteractiveContainer : Container
     {
         private const float border_thickness = 4f;
 

@@ -7,7 +7,7 @@ using osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Layouts;
 
 namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
 {
-    public class LayoutController : CompositeDrawable
+    public partial class LayoutController : CompositeDrawable
     {
         private readonly Bindable<VisualizerLayout> layoutBinable = new Bindable<VisualizerLayout>();
 
@@ -28,7 +28,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
         {
             DrawableVisualizerLayout l;
 
-            switch(layoutBinable.Value)
+            switch (layoutBinable.Value)
             {
                 default:
                 case VisualizerLayout.TypeA:
