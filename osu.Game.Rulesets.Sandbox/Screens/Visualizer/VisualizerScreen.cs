@@ -20,7 +20,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer
 {
     public partial class VisualizerScreen : SandboxScreenWithSettings, IKeyBindingHandler<GlobalAction>
     {
-        public override bool AllowBackButton => false;
+        protected override bool InitialBackButtonVisibility => false;
 
         public override bool HideOverlaysOnEnter => true;
 

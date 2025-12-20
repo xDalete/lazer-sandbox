@@ -11,7 +11,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens
         private readonly SandboxSettings settings;
         protected readonly BindableBool SettingsVisible = new BindableBool();
 
-        public SandboxScreenWithSettings()
+        protected SandboxScreenWithSettings()
         {
             AddRangeInternal(new Drawable[]
             {
